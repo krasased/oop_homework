@@ -45,7 +45,7 @@ class Lecturer(Mentor):
     def __str__(self):
         res = f'Имя: {self.name}\nФамилия: {self.surname}\nСредняя оценка за лекции: {self.avg_rate}'
         return res
-
+# Почему при выводе используется self.avg_rate = None вместо посчитанного значения?
 
 class Reviewer(Mentor):
     def rate_hw(self, student, course, grade):
